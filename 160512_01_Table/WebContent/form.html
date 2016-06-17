@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function bt1click() {
+		alert("버튼 클릭");
+
+	}
+
+	function formchk() {
+	// input에서 입력할 form이 빈칸없도록 구성
+	var form  =	document.frm1;
+	alert(form.p_name.value);
+
+	}
+
+</script>
+</head>
+<body>
+
+
+<form action="submit.jsp" name="frm1" method="post">
+	<input type="text" name="p_name" value="" autofocus="" size="" placeholder="안녕">
+	<input type="password" name="p_pw" value="" autofocus="" size="" placeholder="안녕">
+
+<p>
+	1-1번 : <input type="radio" name="p_radio" value="1"> <input type="radio" name="p_radio" value="2"> <input type="radio" name="p_radio" value="3">
+</p>
+
+<p>
+	1-2번 :
+</p>
+<p>
+	1-3번 :
+</p>
+
+
+<p>
+	2-1번 : <input type="radio" name="p_radio2" value="1"> <input type="radio" name="p_radio2" value="2"> <input type="radio" name="p_radio2" value="3">
+</p><br><br><br><br>
+<br>
+<br>
+<br>
+
+과일<br><br>
+
+사과 :<input type="checkbox" name="p_chk" value="1"><br>
+배 : <input type="checkbox" name="p_chk" value="2"><br>
+수박 : <input type="checkbox" name="p_chk" value="3"><br>
+
+
+
+
+<select class="" name="p_combo">
+	<option value="skt">skt </option>
+		<option value="kt">kt </option>
+			<option value="u+">u+ </option>
+</select>
+<br>
+<br>
+<br>
+<textarea name="p_tarea" rows="10" cols="40"></textarea>
+
+<input type="submit" name="name" value="확인">
+
+
+
+<input type="button" name="name" value="버튼 클릭하세욤" onclick="formchk()">
+<input type="hidden" name="name" value="">
+
+</form>
+
+
+
+</body>
+</html>
